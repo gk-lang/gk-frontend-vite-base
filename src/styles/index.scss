@@ -1,0 +1,86 @@
+@import "element-plus/theme-chalk/dark/css-vars.css";
+@import "./var.css";
+
+// 解决抽屉弹出时，body宽度变化的问题
+.el-popup-parent--hidden {
+  width: 100% !important;
+}
+.app-menu-popper{
+  &.el-popper{
+    margin-left: 6px;
+    border: 0px !important;
+    box-sizing: border-box;
+  }
+}
+@mixin base-scrollbar {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba($base-menu-background, 0.1);
+    border: 3px solid transparent;
+    border-radius: 7px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba($base-menu-background, 0.2);
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: rgba($base-menu-background, 0.2);
+  }
+}
+
+html {
+  body,
+  body[class*="app-theme-"] {
+    position: relative;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: "PingFang SC", Arial, "Microsoft YaHei", sans-serif;
+    font-family: var(--van-base-font);
+    font-size: $base-font-size-default;
+    color: $base-color-black;
+    background: $base-color-background;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none !important;
+     * {
+      outline: none !important;
+      @include base-scrollbar;
+    }
+    #nprogress .bar {
+      z-index: 99999;
+    }
+    #app {
+      height: 100vh;
+      overflow: auto;
+      @include base-scrollbar;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      outline: none !important;
+      scroll-behavior: smooth;
+    }
+    /*a标签 */
+    a {
+      // color: $base-color-blue;
+      text-decoration: none;
+    }
+
+    /*图片 */
+    img {
+      object-fit: cover;
+
+      &[src=""],
+      &:not([src]) {
+        opacity: 0;
+      }
+    }
+  }
+}

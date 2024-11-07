@@ -1,0 +1,200 @@
+:root {
+
+  /* --vh: calc( 100vh - 20px ); */
+
+  --login-bg-color: #293146;
+
+  /* left menu start */
+  --left-menu-width: 266px;
+
+  --left-menu-max-width: 220px;
+
+  --left-menu-min-width: 64px;
+
+  --left-menu-bg-color: #001529;
+
+  --left-menu-bg-light-color: #0f2438;
+
+  --left-menu-bg-active-color: var(--el-color-primary);
+
+  --left-menu-bg-hover-color: var(--el-color-primary);
+
+  --left-menu-text-color: #bfcbd9;
+
+  --left-menu-text-active-color: #fff;
+
+  --left-menu-collapse-bg-active-color: var(--el-color-primary);
+  /* left menu end */
+
+  /* logo start */
+  --logo-height: 50px;
+
+  --logo-title-text-color: #fff;
+  /* logo end */
+
+  /* header start */
+  --top-header-bg-color: '#fff';
+
+  --top-header-text-color: 'inherit';
+
+  --top-header-hover-color: #f6f6f6;
+
+  --top-tool-height: var(--logo-height);
+
+  --top-tool-p-x: 0;
+
+  --tags-view-height: 35px;
+  /* header start */
+
+  /* tab menu start */
+  --tab-menu-max-width: 80px;
+
+  --tab-menu-min-width: 30px;
+
+  --tab-menu-collapse-height: 36px;
+  /* tab menu end */
+
+  --app-content-padding: 7px;
+
+  --app-content-bg-color: #f5f7f9;
+
+  --app-footer-height: 50px;
+
+  --transition-time-02: 0.2s;
+
+  --left-menu-item-height: 40px;
+
+  --left-sub-menu-item-height: 50px;
+
+
+
+  --el-border-radius-base: 5px;
+  --el-left-menu-width: var(--left-menu-width);
+  /* --el-left-menu-width: 150px; */
+
+  --el-background-color: #f6f8f9;
+  --el-menu-background-color: #282c34;
+  --el-menu-background-color-second: #fff;
+  --el-menu-color-text: #fff;
+  --el-menu-horizontal-sub-item-height: 42px;
+  /* --el-menu-item-height: 50px; */
+
+
+  --el-color-grey: rgba(0, 0, 0, .65);
+  --el-color-black: rgba(0, 0, 0, .75);
+  --el-color-primary: #4e88f3;
+  --el-color-primary-light-1: rgba(78, 136, 243, .9);
+  --el-color-primary-light-2: rgba(78, 136, 243, .8);
+  --el-color-primary-light-3: rgba(78, 136, 243, .7);
+  --el-color-primary-light-4: rgba(78, 136, 243, .6);
+  --el-color-primary-light-5: rgba(78, 136, 243, .5);
+  --el-color-primary-light-6: rgba(78, 136, 243, .4);
+  --el-color-primary-light-7: rgba(78, 136, 243, .3);
+  --el-color-primary-light-8: rgba(78, 136, 243, .2);
+  --el-color-primary-light-9: rgba(78, 136, 243, .1);
+  --el-color-primary-dark-2: #4e88f3;
+  --el-color-success: #13ce66;
+  --el-color-success-light: rgba(19, 206, 102, .2);
+  --el-color-success-lighter: rgba(19, 206, 102, .1);
+  --el-color-success-light-1: rgba(19, 206, 102, .9);
+  --el-color-success-light-2: rgba(19, 206, 102, .8);
+  --el-color-success-light-3: rgba(19, 206, 102, .7);
+  --el-color-success-light-4: rgba(19, 206, 102, .6);
+  --el-color-success-light-5: rgba(19, 206, 102, .5);
+  --el-color-success-light-6: rgba(19, 206, 102, .4);
+  --el-color-success-light-7: rgba(19, 206, 102, .3);
+  --el-color-success-light-8: rgba(19, 206, 102, .2);
+  --el-color-success-light-9: rgba(19, 206, 102, .1);
+  --el-color-success-dark-2: #13ce66;
+  --el-color-warning: #e6a23c;
+  --el-color-warning-light: rgba(230, 162, 60, .2);
+  --el-color-warning-lighter: rgba(230, 162, 60, .1);
+  --el-color-warning-light-1: rgba(230, 162, 60, .9);
+  --el-color-warning-light-2: rgba(230, 162, 60, .8);
+  --el-color-warning-light-3: rgba(230, 162, 60, .7);
+  --el-color-warning-light-4: rgba(230, 162, 60, .6);
+  --el-color-warning-light-5: rgba(230, 162, 60, .5);
+  --el-color-warning-light-6: rgba(230, 162, 60, .4);
+  --el-color-warning-light-7: rgba(230, 162, 60, .3);
+  --el-color-warning-light-8: rgba(230, 162, 60, .2);
+  --el-color-warning-light-9: rgba(230, 162, 60, .1);
+  --el-color-warning-dark-2: #e6a23c;
+  --el-color-danger: #fd4e4e;
+  --el-color-danger-light: rgba(253, 78, 78, .2);
+  --el-color-danger-lighter: rgba(253, 78, 78, .1);
+  --el-color-danger-light-1: rgba(253, 78, 78, .9);
+  --el-color-danger-light-2: rgba(253, 78, 78, .8);
+  --el-color-danger-light-3: rgba(253, 78, 78, .7);
+  --el-color-danger-light-4: rgba(253, 78, 78, .6);
+  --el-color-danger-light-5: rgba(253, 78, 78, .5);
+  --el-color-danger-light-6: rgba(253, 78, 78, .4);
+  --el-color-danger-light-7: rgba(253, 78, 78, .3);
+  --el-color-danger-light-8: rgba(253, 78, 78, .2);
+  --el-color-danger-light-9: rgba(253, 78, 78, .1);
+  --el-color-danger-dark-2: #fd4e4e;
+  --el-color-error: #fd4e4e;
+  --el-color-error-light: rgba(253, 78, 78, .2);
+  --el-color-error-lighter: rgba(253, 78, 78, .1);
+  --el-color-error-light-1: rgba(253, 78, 78, .9);
+  --el-color-error-light-2: rgba(253, 78, 78, .8);
+  --el-color-error-light-3: rgba(253, 78, 78, .7);
+  --el-color-error-light-4: rgba(253, 78, 78, .6);
+  --el-color-error-light-5: rgba(253, 78, 78, .5);
+  --el-color-error-light-6: rgba(253, 78, 78, .4);
+  --el-color-error-light-7: rgba(253, 78, 78, .3);
+  --el-color-error-light-8: rgba(253, 78, 78, .2);
+  --el-color-error-light-9: rgba(253, 78, 78, .1);
+  --el-color-error-dark-2: #fd4e4e;
+  --el-color-info: #909399;
+  --el-color-info-light: rgba(144, 147, 153, .2);
+  --el-color-info-lighter: rgba(144, 147, 153, .1);
+  --el-color-info-dark-2: #909399;
+  --el-font-size-small: 12px;
+  --el-font-size-default: 14px;
+  --el-font-size-big: 16px;
+  --el-font-size-bigger: 18px;
+  --el-font-size-max: 22px;
+  --el-transition: all .2s cubic-bezier(.645, .045, .355, 1),
+    border 0s,
+    color .1s,
+    font-size 0s;
+  
+  --el-padding: 7px;
+  --el-margin: 20px;
+  --el-nav-height: 60px;
+  --el-tabs-height: 40px;
+  --el-footer-height: 50px;
+  --el-mask-color: rgba(255, 255, 255, .6);
+  --el-z-index: 1999;
+  --el-header-height: 60px;
+
+  --el-logo-height: 60px;
+  --el-title-color: #fff;
+  --el-input-height: 32px;
+  --el-right-content-width-min: calc(100% - 64px);
+  --el-container-height: calc(100vh - var(--el-nav-height) - var(--el-tabs-height) - var(--el-padding) * 2);
+  
+
+  .el-tabs .el-tabs__item {
+    --el-tab-item-height: 34px;
+  }
+  
+
+  .el-menu {
+    /* --el-menu-background-color: var(--el-menu-background-color);
+    --el-menu-background-color-second: var(--el-menu-background-color-second);
+    --el-menu-color-text: var(--el-menu-color-text);
+    --el-menu-horizontal-sub-item-height: var(--el-menu-horizontal-sub-item-height);
+    --el-menu-item-height:var(--el-menu-item-height); */
+    --el-menu-item-height: 50px;
+    --el-menu-text-color: var(--el-menu-color-text);
+    --el-menu-hover-text-color: var(--el-menu-color-text);
+    --el-menu-bg-color: var(--el-menu-background-color);
+    --el-menu-hover-bg-color: rgb(0, 0, 0);
+    --el-menu-level: 0;
+  }
+}
+
+.dark {
+  --app-content-bg-color: var(--el-bg-color);
+}

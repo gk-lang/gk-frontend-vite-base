@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <json-editor-vue v-model="value"></json-editor-vue>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://cdn.jsdelivr.net/npm/vue/dist/vue.esm-browser.prod.js",
+          "vue-demi": "https://cdn.jsdelivr.net/npm/vue-demi/lib/v3/index.mjs",
+          "vanilla-jsoneditor": "https://cdn.jsdelivr.net/npm/vanilla-jsoneditor",
+          "json-editor-vue": "https://cdn.jsdelivr.net/npm/json-editor-vue@0.15/dist/json-editor-vue.mjs"
+        }
+      }
+    </script>
+    <script type="module">
+      import { createApp, ref } from 'vue'
+      import JsonEditorVue from 'json-editor-vue'
+
+      createApp({
+        setup: () => ({
+          value: ref(),
+        }),
+      })
+        .use(JsonEditorVue)
+        .mount('#app')
+    </script>
+  </body>
+</html>
